@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Aprende practicando y divierteté</title>
+    <script defer type="text/javascript" src="calculadora.js"></script>
+    <meta name="author" content="Raúl Caro Pastorino" />
+    <script type="text/javascript">
+      function generarAleatorio() {
+        return parseInt((Math.random() + 0.01) * 20);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 id="titulo1">Calculadora Mejorada</h1>
+    <div class="resultado">
+      Haz calculadora científica
+      <br /><br />
+      <span style="font-size: 1.8em">Calculadora"</span>
+      <ul>
+        <li>0) SALIR</li>
+        <li>1) Sumar</li>
+        <li>2) Restar</li>
+        <li>3) Multiplicar</li>
+      </ul>
+    </div>
+
+    <div id="entrada1" style="color: red; font-size: 1.6em"></div>
+    <div id="entrada2" style="color: red; font-size: 1.6em"></div>
+
+
+
+    <form style="margin: auto; text-align: center">
+      <input type="button" value="Operacion" onclick="operacion();" />
+    </form>
+
+    <div
+      id="resultado"
+      style="color: green; font-size: 1.6em; margin: auto; text-align: center"
+    >
+      Pulsa para realizar una operacion
+      <br />
+    </div>
